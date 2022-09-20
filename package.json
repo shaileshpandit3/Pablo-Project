@@ -1,0 +1,25 @@
+{
+  "name": "pablo_project_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Shailesh Pandit",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaileshpandit3/Pablo-Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shaileshpandit3/Pablo-Project/issues"
+  },
+  "homepage": "https://github.com/shaileshpandit3/Pablo-Project#readme"
+}
