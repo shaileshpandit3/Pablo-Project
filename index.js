@@ -7,7 +7,7 @@ const app = express();
 app.use(express.urlencoded())
 app.use(express.json())
 
-
+// database connection
 mongoose.connect("mongodb+srv://shailesh123:rYbeOdoWZtY9NdKU@cluster0.e1ege.mongodb.net/Pawan-DB?retryWrites=true&w=majority")
     .then(() => console.log("Mongodb conected Successfully "))
     .catch(err => console.log(err))
@@ -18,7 +18,7 @@ app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
 
-
+// Post api 
 app.post('/add', async (req, res) => {
     try {
         let postData = req.body
@@ -31,13 +31,14 @@ app.post('/add', async (req, res) => {
 });
 
     var counter = 1
-
+// Get api
 app.get('/list', async (req, res) => {
     try {
 
         console.log(counter)
         counter++;
-        if(counter >= 7){
+        // if 100 data added in the database
+        if(counter >= 100){
             counter = 1;
         }
         const data = await Quote.find();
